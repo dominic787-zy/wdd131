@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temple Album | WDD 131</title>
+  <meta name="description" content="A responsive photo album of temples around the world.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Mobile first: base styles load first, large-view overrides second -->
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 700px)">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <h2 class="site-title">Temple Album</h2>
+      <button id="menu" class="menu-button" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    </div>
+    <nav id="primary-nav" aria-label="Main">
+      <a href="#" class="active">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <section class="gallery">
+      <figure>
+        <img src="images/temple.png" alt="Salt Lake Temple" width="400" height="250">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.png" alt="Rome Italy Temple" width="400" height="250" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.png" alt="Nairobi Kenya Temple" width="400" height="250" loading="lazy">
+        <figcaption>Nairobi Kenya Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.png" alt="Idaho Falls Idaho Temple" width="400" height="250" loading="lazy">
+        <figcaption>Idaho Falls Idaho Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.png" alt="Paris France Temple" width="400" height="250" loading="lazy">
+        <figcaption>Paris France Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.png" alt="Manti Utah Temple" width="400" height="250" loading="lazy">
+        <figcaption>Manti Utah Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.png" alt="Accra Ghana Temple" width="400" height="250" loading="lazy">
+        <figcaption>Accra Ghana Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.png" alt="Tokyo Japan Temple" width="400" height="250" loading="lazy">
+        <figcaption>Tokyo Japan Temple</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple.png" alt="Laie Hawaii Temple" width="400" height="250" loading="lazy">
+        <figcaption>Laie Hawaii Temple</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Dominic Ogot | KENYA</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Larger view overrides (min-width: 700px) */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.menu-button { display: none; }   /* hamburger only on mobile */
+
+nav {
+  display: flex;                  /* always visible */
+  flex-direction: row;
+  background: none;
+}
+nav a {
+  border-top: none;
+  padding: 1.1rem 1.1rem;
+}
+
+.header-bar { padding: 0.75rem 0; }
+
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+main { padding: 1.5rem 2rem; }
